@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	ll.insert(200);
 	ll.insert(300);
 	ll.insert(400);
-	
+	ll.insertAtStart(50);
 	ll.traverse();
 
 	

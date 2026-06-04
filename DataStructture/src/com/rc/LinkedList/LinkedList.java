@@ -26,6 +26,12 @@ public class LinkedList {
 		t.next=n;
 	}
 	
+	public void insertAtStart(Integer data) {
+		Node n=new Node(data);
+		n.next=this.head;
+		head=n;
+	}
+	
 	public void traverse() {
 		Node t=this.head;
 		while(t!=null) {
