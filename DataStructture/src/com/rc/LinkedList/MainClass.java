@@ -8,6 +8,8 @@ public static void main(String[] args) {
 	ll.insert(300);
 	ll.insert(400);
 	ll.insertAtStart(50);
+	ll.insert(500);
+	ll.insert(600);
 	ll.traverse();
 
 	
