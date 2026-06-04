@@ -2,11 +2,11 @@ package com.rc.LinkedList;
 
 public class MainClass {
 public static void main(String[] args) {
-	LinkedList ll=new LinkedList(new Node(100, null));
-	ll.insert(new Node(200, null));
-	ll.insert(new Node(300, null));
-	ll.insert(new Node(400, null));
-	ll.insert(new Node(500, null));
+	LinkedList ll=new LinkedList();
+	ll.insert(100);
+	ll.insert(200);
+	ll.insert(300);
+	ll.insert(400);
 	
 	ll.traverse();
 

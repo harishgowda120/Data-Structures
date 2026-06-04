@@ -1,17 +1,25 @@
 package com.rc.LinkedList;
 
 public class LinkedList {
-	Node st;
-	public LinkedList(Node st) {
-		this.st=st;
+	
+	class Node {
+		Integer data;
+		Node next;
+		public Node(Integer n) {
+			this.data=n;	
+		}
 	}
 	
-	public void insert(Node n) {
-		if(this.st==null) {
-			this.st=n;
+	Node head;
+	
+	
+	public void insert(Integer data) {
+		Node n=new Node(data);
+		if(this.head==null) {
+			this.head=n;
 			return;
 		}
-		Node t=st;
+		Node t=head;
 		while(t.next!=null){
 			t=t.next;
 		}
@@ -19,9 +27,13 @@ public class LinkedList {
 	}
 	
 	public void traverse() {
-		Node t=this.st;
+		Node t=this.head;
 		while(t!=null) {
-			System.out.print(t.val+"->");
+			if(t.next!=null)
+				System.out.print(t.data+"->");
+			else
+				System.out.print(t.data);
+
 			t=t.next;	
 		}
 	}
