@@ -12,6 +12,17 @@ public class LinkedList {
 	
 	Node head;
 	
+	public Node reverseLinkedList(Node head) {
+		Node pre=null;
+		Node cur=head;
+		while(cur!=null) {
+			Node newNode=cur.next;
+			cur.next=pre;
+			pre=cur;
+			cur=newNode;
+		}
+		return pre;
+	}
 	
 	public void insert(Integer data) {
 		Node n=new Node(data);
